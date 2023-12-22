@@ -10,16 +10,11 @@ import (
 var input string
 
 func main() {
-	//solve1()
+	solve1()
 	solve2()
 }
 
 func solve1() {
-	//	input = `LLR
-	//
-	//AAA = (BBB, BBB)
-	//BBB = (AAA, ZZZ)
-	//ZZZ = (ZZZ, ZZZ)`
 	lines := strings.Split(input, "\n")
 	path := lines[0]
 	g := make(map[string][]string)
@@ -40,16 +35,6 @@ func solve1() {
 }
 
 func solve2() {
-	//	input = `LR
-	//
-	//11A = (11B, XXX)
-	//11B = (XXX, 11Z)
-	//11Z = (11B, XXX)
-	//22A = (22B, XXX)
-	//22B = (22C, 22C)
-	//22C = (22Z, 22Z)
-	//22Z = (22B, 22B)
-	//XXX = (XXX, XXX)`
 	lines := strings.Split(input, "\n")
 	path := lines[0]
 	g := make(map[string][]string)
