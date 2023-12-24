@@ -15,6 +15,7 @@ import (
 var input string
 
 func main() {
+
 	solve1()
 	solve2()
 }
