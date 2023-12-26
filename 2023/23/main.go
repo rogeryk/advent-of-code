@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"fmt"
 	"slices"
 	"strings"
 )
@@ -118,7 +117,6 @@ func solve2() {
 	ans := 0
 	var dfs func(int, int)
 	vis := map[int]bool{}
-	fmt.Println(points, len(points))
 	dfs = func(p, d int) {
 		if p == len(points)-1 {
 			ans = max(ans, d)
